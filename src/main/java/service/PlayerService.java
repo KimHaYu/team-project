@@ -11,7 +11,7 @@ public class PlayerService {
         this.playerDAO = playerDAO;
     }
 
-    public void createPlayer(int teamId, String playerName, String position) {
-        playerDAO.insert(teamId, playerName, position);
+    public void createPlayer(int teamId, String name, String position) {
+        playerDAO.insert(teamId, name, position);
     }
 }

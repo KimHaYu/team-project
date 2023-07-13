@@ -1,18 +1,36 @@
 package model;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Getter;
-import lombok.Setter;
+import lombok.ToString;
 
 import java.sql.Timestamp;
 
 @Getter
-@Setter
-@AllArgsConstructor
+@ToString
 public class Player {
-    private Integer playerId;
-    private Integer teamId;
-    private String playerName;
+    private int id;
+    private int teamId;
+    private String name;
     private String position;
-    private Timestamp playerCreatedAt;
+    private Timestamp createdAt;
+
+    public Player(int id, int teamId, String name, String position, Timestamp createdAt) {
+        this.id = id;
+        this.teamId = teamId;
+        this.name = name;
+        this.position = position;
+        this.createdAt = createdAt;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "id=" + id +
+                ", teamId=" + teamId +
+                ", name='" + name + '\'' +
+                ", position='" + position + '\'' +
+                ", createdAt=" + createdAt +
+                '}';
+    }
 }
