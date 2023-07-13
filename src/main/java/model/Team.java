@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -13,5 +13,5 @@ public class Team {
     private Integer teamId;
     private Integer stadiumId;
     private String teamName;
-    private Timestamp teamCreatedAt;
+    private LocalDateTime teamCreatedAt;
 }

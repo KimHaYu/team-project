@@ -6,10 +6,10 @@ import java.sql.DriverManager;
 public class DBconnection {
     public static Connection getInstance() {
 //       MySQL 연결 정보
-        String url = "jdbc:mysql://localhost:3306/project";
+        String url = "jdbc:mysql://localhost:3306/baseball_db"; // TODO 바꾸기
 //       프로토콜 이름
         String username = "root";
-        String password = "zhsks123";
+        String password = "root1234";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
